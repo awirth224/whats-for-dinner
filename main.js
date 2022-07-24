@@ -37,8 +37,8 @@ dessertDishes = [
 ]
 
 //querySelectors
-// var  = document.querySelector('')
-// var  = documnet.querySelector('')
+var letsCookButton  = document.querySelector('.button1')
+var clearButton  = document.querySelector('.button2')
 // var  = document.querySelector('')
 
 //Buttons
@@ -46,6 +46,14 @@ dessertDishes = [
 //clearButton.addEventListener
 
 //Functions
-// entireMeal() {
-//  
-//}
+ randomsideDishes() {
+    Math.floor(Math.random()*sideDishes.length)
+ }
+
+ randomMain() {
+   Math.floor(Math.random()*mainDishes.length)
+ }
+
+ randomDesserts() {
+   Math.floor(Math.random()*dessertDishes.length)
+ }  
