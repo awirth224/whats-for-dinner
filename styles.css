@@ -8,3 +8,107 @@ red - #ee5253
 
 */
 
+header {
+    background-color:#0fb9b1;
+    padding:20px 20px 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1520869578617-557561d7b114?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-color: #cccccc;
+    box-sizing: border-box;
+}
+
+main {
+    display:flex;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 10px 20px 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
+    box-sizing: border-box;
+}
+
+div {
+    flex-direction: row;
+    justify-content: center;
+    display:flex;
+    height: 300px;
+    width:400px;
+    background-color:rgba(225, 225, 225, .9);
+    box-sizing: border-box
+}
+
+.choose {
+    flex-direction:column;
+    justify-content:center;
+    margin: 200px 200px 200px 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size:auto;
+    box-sizing: border-box;
+    
+}
+
+.choose {
+    display:flex;
+    height:auto;
+}
+
+input[type="radio"] {
+    width:auto;
+    display:block;
+    box-sizing: border-box;
+}
+
+.radio {
+    border:solid 1px;
+    border-color: black;
+    margin: 5px 370px 10px 5px
+}
+
+.radio label {
+    font-family:'Roboto', sans-serif;
+    margin: 100px 10px 10px 10px;
+}
+
+.button {
+    background-color:#0fb9b1;
+    border:none;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    border: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+
+}
+
+.right-half {
+    margin: 200px 200px 200px 200px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    display:flex;
+    justify-content: flex-end;
+    background-color:rgba(225, 225, 225, .9);
+    margin: 65px 65px 65px 65px;
+    box-sizing: border-box;
+
+}
+svg .defs-only {
+    flex-direction:row;
+    justify-content:center;
+    display: block; position: absolute;
+    border:200px 200px 200px 200px;  
+    box-sizing: border-box;
+}
