@@ -1,5 +1,5 @@
-//Arrays
-sideDishes = [
+
+var sideDishes = [
     'Miso Glazed Carrots',
     'Coleslaw',
     'Garden Salad',
@@ -11,7 +11,7 @@ sideDishes = [
     'Redskin Mashed Potatoes',
     'Green bean casserole'
 ]
-mainDishes = [
+var mainDishes = [
     'Margarita Pizza',
     'Tofu Fried Rice',
     'Bell Pepper Fajitas',
@@ -23,7 +23,7 @@ mainDishes = [
     'Vegetarian Enchiladas',
     'Chickpea Salad Sandwiches'
 ]
-dessertDishes = [
+var dessertDishes = [
     'Apple Pie',
     'Banana Bread',
     'Cheesecake',
@@ -36,24 +36,34 @@ dessertDishes = [
     'Pumpkin pie'
 ]
 
-//querySelectors
+
 var letsCookButton  = document.querySelector('.button1')
-var clearButton  = document.querySelector('.button2')
-// var  = document.querySelector('')
+var selectedFood = document.querySelectorAll('input[name=food]:checked').value
 
-//Buttons
-//letsCookButton.addEventListener
-//clearButton.addEventListener
 
-//Functions
- randomsideDishes() {
-    Math.floor(Math.random()*sideDishes.length)
+letsCookButton.addEventListener('click', function displayDish)
+
+
+  
+  function getRandomIndex(array) {
+    return Math.floor(Math.random() * array.length)
+ }
+ function getRandomDish() {
+    var sideDishes = sideDishes[getRandomIndex(sideDishes)]
+    var mainDishes = mainDishes[getRandomIndex(mainDishes)]
+    var dessertDishes = dessertDishes[getRandomIndex(dessertDishes)]
  }
 
- randomMain() {
-   Math.floor(Math.random()*mainDishes.length)
+ function displayRandomDish() {
+    if (selectedFood === 'side') {
+        return randomSide ()
+    }
+    if (selectedFood === 'main') {
+        return randomMain ()
+    }
+    if (selectedFood === 'dessert') {
+        return randomDesserts()
+    }
  }
 
- randomDesserts() {
-   Math.floor(Math.random()*dessertDishes.length)
- }  
+ 
